@@ -8,8 +8,8 @@ fi
 # User specific aliases and functions
 
 [[ -d /opt/quest/bin ]] && PATH=$PATH:/opt/quest/bin
-[[ -d /usr/local/aws/bin ]] && PATH=/usr/local/aws/bin:$PATH
 [[ -d ~/ansible/bin ]] && source ~/ansible/hacking/env-setup -q
+[[ -d ~/bin/myrepos ]] && PATH=$PATH:${HOME}/bin/myrepos
 
 PATH=${PATH}:/sbin:${HOME}/bin
 export PATH
@@ -65,6 +65,7 @@ else
   source "$HOME/.homesick/repos/homeshick/homeshick.sh"
   source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
   [[ -r $HOME/.proxy ]] && source "$HOME/.proxy"
-  [[ -r /usr/local/aws/bin/aws_completer ]] && complete -C '/usr/local/aws/bin/aws_completer' aws
+  [[ -r /usr/local/bin/aws_completer ]] && complete -C '/usr/local/bin/aws_completer' aws
+  [[ -r /usr/local/bin/aws_completer ]] && complete -C '/usr/local/bin/aws_completer' ash
 fi
 
