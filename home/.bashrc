@@ -10,6 +10,7 @@ fi
 [[ -d /opt/quest/bin ]] && PATH=$PATH:/opt/quest/bin
 [[ -d ~/ansible/bin ]] && source ~/ansible/hacking/env-setup -q
 [[ -d ~/bin/myrepos ]] && PATH=$PATH:${HOME}/bin/myrepos
+[[ -d /usr/local/go/bin ]] && PATH=$PATH:/usr/local/go/bin && export GOPATH=$HOME/gowork
 
 PATH=${PATH}:/sbin:${HOME}/bin
 export PATH
