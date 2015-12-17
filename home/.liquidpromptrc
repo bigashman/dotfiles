@@ -144,5 +144,5 @@ LP_ENABLE_SSH_COLORS=0
 LP_DISABLED_VCS_PATH=""
 
 # Change the default ssh hostname colour
-LP_COLOR_SSH=PINK
+LP_COLOR_SSH="$PINK"
 # vim: set et sts=4 sw=4 tw=120 ft=sh:
