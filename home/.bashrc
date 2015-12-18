@@ -68,6 +68,12 @@ else
   [[ -r $HOME/.proxy ]] && source "$HOME/.proxy"
   [[ -r /usr/local/bin/aws_completer ]] && complete -C '/usr/local/bin/aws_completer' aws
   [[ -r /usr/local/bin/aws_completer ]] && complete -C '/usr/local/bin/aws_completer' ash
-  [[ -r ~/.proxy.cfg ]] && source ~/.proxy.cfg
+  if [[ -r ~/.proxy.cfg ]]
+  then
+      source ~/.proxy.cfg
+      echo "use_proxy=yes
+      http_proxy=${HTTP_PROXY}
+      https_proxy=${HTTPS_PROXY}" >~/.wgetrc
+  fi
 fi
 
