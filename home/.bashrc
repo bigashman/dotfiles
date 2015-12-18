@@ -68,5 +68,6 @@ else
   [[ -r $HOME/.proxy ]] && source "$HOME/.proxy"
   [[ -r /usr/local/bin/aws_completer ]] && complete -C '/usr/local/bin/aws_completer' aws
   [[ -r /usr/local/bin/aws_completer ]] && complete -C '/usr/local/bin/aws_completer' ash
+  [[ -r ~/.proxy.cfg ]] && source ~/.proxy.cfg
 fi
 
