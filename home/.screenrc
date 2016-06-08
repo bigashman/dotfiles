@@ -170,6 +170,7 @@ screen -t bash        0 bash
 # ===============================================================
 #
   termcapinfo xterm     ti@:te@
+  termcapinfo xterm* 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
 #
 # termcap  xterm        'AF=\E[3%dm:AB=\E[4%dm'
 # terminfo xterm        'AF=\E[3%p1%dm:AB=\E[4%p1%dm'
