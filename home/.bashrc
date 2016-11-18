@@ -41,6 +41,7 @@ alias fym='sudo $(history -p \!\!)'
 if [ -r /usr/bin/vim ]
 then
   alias vi=/usr/bin/vim
+  export EDITOR=vim
 fi
 
 umask 0022
