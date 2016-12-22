@@ -63,7 +63,7 @@ then
 else
   # PS1='\u@\h:\[\e[1;32m\]\W\[\e[0m\]\$ '
   # Only load Liquid Prompt in interactive shells, not from a script or from scp
-  [[ $- = *i* ]] && [[ -r ~/.liquidprompt/liquidprompt ]] && source ~/.liquidprompt/liquidprompt
+  [[ $- = *i* ]] && [[ -r ~/.liquidprompt/liquidprompt ]] && [[ `uname -s` != "Darwin" ]] && source ~/.liquidprompt/liquidprompt
   source "$HOME/.homesick/repos/homeshick/homeshick.sh"
   source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
   [[ -r $HOME/.proxy ]] && source "$HOME/.proxy"
