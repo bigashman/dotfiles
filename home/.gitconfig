@@ -1,5 +1,10 @@
 [user]
 	name = Ashley Ward
-	email = (none)
+	email = ashley@ward.scot
+	signingkey = 38CF6746
 [push]
 	default = simple
+[commit]
+	gpgsign = true
+[alias]
+	yolo = !git add -A && git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
